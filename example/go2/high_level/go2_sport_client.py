@@ -120,7 +120,6 @@ class CustomBehaviorExtension:
         self.state_monitor.init_state_monitoring()
 
     def wait_for_stable_position(self, timeout=5):
-        """Wait for robot to reach a stable position"""
         print("  - Waiting for stable position...")
         start_time = time.time()
 
@@ -520,7 +519,7 @@ if __name__ == "__main__":
     sport_client.Init()
 
     custom_behaviors = CustomBehaviorExtension(sport_client)
-    
+
     # Initialize state monitoring (optional - comment out if you don't want it)
     print("  Initializing state monitoring...")
     try:
