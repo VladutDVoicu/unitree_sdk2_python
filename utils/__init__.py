@@ -12,6 +12,7 @@ from utils.utils import (
     draw_bounding_rect,
     draw_landmarks,
 )
+from utils.gesture_dispatcher import GestureDispatcher
 
 __all__ = [
     CvFpsCalc,
@@ -26,4 +27,5 @@ __all__ = [
     logging_csv,
     draw_bounding_rect,
     draw_landmarks,
+    GestureDispatcher,
 ]
